@@ -1,0 +1,58 @@
+<html th:replace="~{base::layout(~{::main})}">
+  <body>
+    <main>
+      <!-- Login Page Section -->
+      <section id="login" class="py-5 bg-light">
+        <div class="container">
+          <p class="text-center mb-5 fs-4">Select your user category to proceed to the corresponding login portal.</p>
+          <div class="row justify-content-center">
+            <!-- Admin Login Card -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow-lg border-0 rounded-4 hover-shadow">
+                <div class="card-header text-white text-center py-4" style="background-color: #0d47a1;">
+                  <h4><i class="bi bi-person-lock me-2"></i>Administrator Access</h4>
+                  <small class="text-light">System-wide control and configuration</small>
+                </div>
+                <div class="card-body text-center p-4">
+                  <p class="card-text">Administrators can manage users, oversee system settings, review reports, and ensure operational integrity across the platform.</p>
+                  <a href="/AdminLogin" class="btn btn-outline-primary w-100 shadow-sm">Enter Admin Portal</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- SME Login Card -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow-lg border-0 rounded-4 hover-shadow">
+                <div class="card-header text-white text-center py-4" style="background-color: #00695c;">
+                  <h4><i class="bi bi-person-fill-lock me-2"></i>SME Access</h4>
+                  <small class="text-light">Service oversight and engagement</small>
+                </div>
+                <div class="card-body text-center p-4">
+                  <p class="card-text">Subject Matter Experts (SMEs) can manage service workflows, monitor maintenance tasks, provide evaluations, and support user interactions.</p>
+                  <a href="/SMELogin" class="btn btn-outline-success w-100 shadow-sm">Enter SME Portal</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- User Login Card -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow-lg border-0 rounded-4 hover-shadow">
+                <div class="card-header text-white text-center py-4" style="background-color: #546e7a;">
+                  <h4><i class="bi bi-person-circle me-2"></i>User Access</h4>
+                  <small class="text-light">Maintenance requests and tracking</small>
+                </div>
+                <div class="card-body text-center p-4">
+                  <p class="card-text">Users can log maintenance requests, view service progress, and access their maintenance history—all in one place.</p>
+                  <a href="/UserLogin" class="btn btn-outline-secondary w-100 shadow-sm">Enter User Portal</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-5">
+            <p class="text-muted">Unsure which login is right for you? Please contact our support team for guidance.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
